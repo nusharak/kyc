@@ -11,4 +11,4 @@ This repository contains the frontend for the KYC (Know Your Customer) system bu
 ## Installation
 
 1. Clone the repository
-2. npm install
+2. npm install(use node version 20.9.0)
