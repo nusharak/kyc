@@ -127,7 +127,7 @@ function KycSubmission() {
         )}
         <form onSubmit={formik.handleSubmit} style={{ width: '100%' }}>
           <TextField
-            label="Full Name"
+            label="Document Name"
             name="name"
             value={formik.values.name}
             onChange={formik.handleChange}

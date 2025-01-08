@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import { Navigate, Link } from 'react-router-dom';
 import { BASE_URL } from '../constants/DefaultValues';
-import Logo from"../images/KYC.png"
+import Logo from"../images/download.jpeg"
 const validationSchema = Yup.object({
   email: Yup.string()
     .email('Invalid email format')
@@ -40,7 +40,7 @@ function Login() {
       {/* Left Column - Logo */}
       <Grid item xs={12} md={6} sx={{ backgroundColor: '#f0f0f0', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Box>
-          <img src={Logo} alt="Logo" style={{ maxWidth: '80%' }} />
+          <img src={Logo} alt="Logo" style={{ maxWidth: '100%' }} />
         </Box>
       </Grid>
 

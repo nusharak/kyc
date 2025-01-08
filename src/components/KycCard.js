@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
-
+import defaultImage from"../images/KYC.png"
 function KycCard({ name, description, image, status }) {
-  const defaultImage = 'path/to/default-image.jpg'; // Replace with your default image path
+  // const defaultImage = 'path/to/default-image.jp?g'; // Replace with your default image path
 
   const handleViewClick = () => {
     // Open the document in a new window

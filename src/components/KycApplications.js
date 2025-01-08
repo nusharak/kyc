@@ -129,6 +129,7 @@ function AdminDashboard() {
                   <Button
                     variant="contained"
                     color="secondary"
+                    sx={{marginTop:1}}
                     onClick={() => handleStatusChange(row.id, 'rejected')}
                   >
                     Reject

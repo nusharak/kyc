@@ -5,7 +5,7 @@ import axios from 'axios';
 import * as Yup from 'yup';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../constants/DefaultValues';
-
+import Logo from"../images/download.jpeg"
 // Yup validation schema
 const validationSchema = Yup.object({
   username: Yup.string().required('Username is required'),
@@ -22,8 +22,10 @@ function Register() {
       navigate("/login")
       
     } catch (err) {
+      alert('Already registered !');
       setErrors({ general: 'Error registering user' });
       console.error(err);
+      navigate("/login")
     } finally {
       setSubmitting(false);
     }
@@ -34,7 +36,7 @@ function Register() {
       {/* Left Column - Logo */}
       <Grid item xs={12} md={6} sx={{ backgroundColor: '#f0f0f0', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Box>
-          <img src="path-to-logo.png" alt="Logo" style={{ maxWidth: '80%' }} />
+          <img src={Logo} alt="Logo" style={{ maxWidth: '100%' }} />
         </Box>
       </Grid>
 
